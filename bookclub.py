@@ -7,13 +7,13 @@ cluber = st.container()
 list_files = []
 for book in club:
     list_files.append(book)
-# for book in club:
-#     book = book.split("by")
-#     st.write(book)
-#     author.append(book[1])
-#     name.append(book[0])
+for book in list_files[1:]:
+    book = book.split("by")
+    st.write(book)
+    author.append(book[1])
+    name.append(book[0])
 
 with cluber:
     st.write(list_files)
-    st.wrtite(author)
-    st.wrtite(name)
+    st.write(author)
+    st.write(name)
