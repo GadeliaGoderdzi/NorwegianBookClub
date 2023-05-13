@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 #----------------------------------text editing------------------------------------
 club = open("Norwegian Book Club 100.csv")
 author = []
@@ -12,7 +13,9 @@ for book in list_files[1:]:
     author.append(book[1])
     name.append(book[0])
 
+df1 = pd.DataFrame(author)
+df2 = pd.DataFrame(name)
+
 with cluber:
-    st.write(list_files)
-    st.write(author)
-    st.write(name)
+    author = st.dataframe(df1)
+    book = st.dataframe(df2)
