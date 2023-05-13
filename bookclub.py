@@ -5,7 +5,7 @@ author = []
 name = []
 cluber = st.container()
 
-for book in club[1:]:
+for book in club[1:100]:
     book = book.split("by")
     st.write(book)
     author.append(book[1])
