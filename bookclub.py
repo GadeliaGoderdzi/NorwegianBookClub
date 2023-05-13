@@ -6,6 +6,7 @@ name = []
 
 for book in club:
     book = book.split("by")
+    st.write(book)
     author.append(book[1])
     name.append(book[0])
 
